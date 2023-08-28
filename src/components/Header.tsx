@@ -1,19 +1,21 @@
 import Link from 'next/link'
 import { AccountButton } from './AccountButton'
-import Intuition from './Intuition'
+import IntuitionLogotype from './svg/intuition-logotype'
 
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full z-50 ">
-      <div className="flex items-center justify-between mx-auto max-w-7xl py-6 sm:py-6">
+    <div className="max-w-7xl w-full items-center justify-between lg:flex">
+      <div className="space-y-6 max-lg:flex max-lg:flex-col max-lg:items-center">
         <Link href="/">
-          <Intuition />
+          <IntuitionLogotype />
         </Link>
-
-        <div className="flex flex-row items-center gap-x-4 mt-4">
-          <AccountButton />
-        </div>
+        <p className="rounded-md px-3 py-2 font-mono text-sm cursor-default border border-primary-700 bg-gray-100/5 backdrop-blur-sm">
+          Get started by editing <span className="font-bold">src/app/page.tsx</span>
+        </p>
       </div>
-    </header>
+      <div className="flex flex-row items-center mt-4 max-lg:justify-center">
+        <AccountButton />
+      </div>
+    </div>
   )
 }

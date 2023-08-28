@@ -1,4 +1,4 @@
-export default function Logo() {
+export default function IntuitionLogo() {
   return (
     <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-14 w-14">
       <path

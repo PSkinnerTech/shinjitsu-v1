@@ -1,6 +1,4 @@
-import { JSX, SVGProps } from 'react'
-
-export default function intuition() {
+export default function Logo() {
   return (
     <svg viewBox="0 0 322 76" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 md:h-10">
       <path
