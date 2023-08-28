@@ -32,36 +32,36 @@
 
 @layer base {
   :root {
-    --base: #ffffff;
     --transparent: rgba(0, 0, 0, 0);
-    --background: #ffffff;
-    --foreground: #000000;
-    --link: #000000;
+    --base: #000000;
+    --background: #000000;
+    --foreground: #d2d5da;
+    --link: #ffffff;
     --radius: 0.5rem;
 
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: rgb(229, 231, 235);
-    --gray-300: rgb(210, 213, 218);
-    --gray-400: rgb(229, 231, 235);
-    --gray-500: rgb(108, 114, 127);
-    --gray-600: rgb(102, 112, 133);
-    --gray-700: #394150;
-    --gray-800: #212936;
-    --gray-900: #1d2939;
-    --gray-950: #040711;
+    --primary-50: #fafafa;
+    --primary-100: #f5f5f5;
+    --primary-200: #e5e5e5;
+    --primary-300: #d4d4d4;
+    --primary-400: #a3a3a3;
+    --primary-500: #737373;
+    --primary-600: #525252;
+    --primary-700: #404040;
+    --primary-800: #262626;
+    --primary-900: #171717;
+    --primary-950: #0a0a0a;
 
-    --primary-50: #f9fafb;
-    --primary-100: #f9f5ff;
-    --primary-200: #f4ebff;
-    --primary-300: #e9d7fe;
-    --primary-400: #d6bbfb;
-    --primary-500: #b692f6;
-    --primary-600: #9e77ed;
-    --primary-700: #7f56d9;
-    --primary-800: #6941c6;
-    --primary-900: #53389e;
-    --primary-950: #42307d;
+    --primary-50: #fafafa;
+    --primary-100: #f5f5f5;
+    --primary-200: #e5e5e5;
+    --primary-300: #d4d4d4;
+    --primary-400: #a3a3a3;
+    --primary-500: #737373;
+    --primary-600: #525252;
+    --primary-700: #404040;
+    --primary-800: #262626;
+    --primary-900: #171717;
+    --primary-950: #0a0a0a;
 
     --error-50: #fcf2f2;
     --error-100: #f9e3e2;
@@ -99,17 +99,17 @@
     --success-900: #214d3c;
     --success-950: #0f2b23;
 
-    --aPrimary-50: #9e77ed03;
-    --aPrimary-100: #0a090a06;
-    --aPrimary-200: #f4ebff12;
-    --aPrimary-300: #e9d7fe16;
-    --aPrimary-400: #d6bbfb24;
-    --aPrimary-500: #b692f636;
-    --aPrimary-600: #9e77ed48;
-    --aPrimary-700: #7f56d964;
-    --aPrimary-800: #6941c672;
-    --aPrimary-900: #53389e80;
-    --aPrimary-950: #42307d88;
+    --aPrimary-50: #fafafa03;
+    --aPrimary-100: #f5f5f506;
+    --aPrimary-200: #e5e5e512;
+    --aPrimary-300: #d4d4d416;
+    --aPrimary-400: #a3a3a324;
+    --aPrimary-500: #73737336;
+    --aPrimary-600: #52525248;
+    --aPrimary-700: #40404064;
+    --aPrimary-800: #26262672;
+    --aPrimary-900: #17171780;
+    --aPrimary-950: #0a0a0a88;
 
     --aError-50: #fcf2f203;
     --aError-100: #f9e3e206;
@@ -150,8 +150,8 @@
     --slate-50: #f8fafc;
     --slate-100: #f1f5f9;
     --slate-200: #e2e8f9;
-    --slate-300: rgb(203, 213, 225);
-    --slate-400: rgb(148, 163, 184);
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
     --slate-500: #64748b;
     --slate-600: #475569;
     --slate-700: #334155;
@@ -430,39 +430,38 @@
   }
 
   .glassmorphic {
-    background: rgba(2, 2, 2, 1, 0.2);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
   }
-}
 
-html {
-  @apply bg-background;
-}
+  html {
+    @apply bg-background;
+  }
 
-@layer utilities {
-  @keyframes scroll-text {
-    0% {
-      transform: translateX(0%);
+  @layer utilities {
+    @keyframes scroll-text {
+      0% {
+        transform: translateX(0%);
+      }
+      90% {
+        transform: translateX(-100%);
+      }
+      95% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
     }
-    90% {
-      transform: translateX(-100%);
+    .scroll-text {
+      animation: scroll-text 7s linear infinite;
     }
-    95% {
-      transform: translateX(0%);
+    .hover\:scroll-text:hover {
+      animation: scroll-text 7s linear infinite;
     }
-    100% {
-      transform: translateX(0%);
+    .focus\:scroll-text:focus {
+      animation: scroll-text 7s linear infinite;
     }
-  }
-  .scroll-text {
-    animation: scroll-text 7s linear infinite;
-  }
-  .hover\:scroll-text:hover {
-    animation: scroll-text 7s linear infinite;
-  }
-  .focus\:scroll-text:focus {
-    animation: scroll-text 7s linear infinite;
   }
 }

@@ -1,5 +1,4 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-import SpotlightOverlay from './SpotlightOverlay'
 import { Button } from './ui/button'
 
 export const AccountButton = () => {
@@ -25,16 +24,16 @@ export const AccountButton = () => {
             {(() => {
               if (!connected) {
                 return (
-                  <SpotlightOverlay spotlightColor="rgba(255,255,255, 0.10)">
-                    <Button onClick={openConnectModal}>Connect Wallet</Button>
-                  </SpotlightOverlay>
+                  <Button onClick={openConnectModal} className="border border-primary-600">
+                    Connect Wallet
+                  </Button>
                 )
               }
               if (chain.unsupported) {
                 return (
-                  <SpotlightOverlay spotlightColor="rgba(255,255,255, 0.10)">
-                    <Button onClick={openChainModal}>Wrong network</Button>
-                  </SpotlightOverlay>
+                  <Button onClick={openChainModal} className="border border-primary-600">
+                    Wrong network
+                  </Button>
                 )
               }
               return (
@@ -55,9 +54,9 @@ export const AccountButton = () => {
                       </div>
                     )}
                   </Button> */}
-                  <SpotlightOverlay spotlightColor="rgba(255,255,255, 0.10)">
-                    <Button onClick={openAccountModal}>{account.ensName ?? account.displayName}</Button>
-                  </SpotlightOverlay>
+                  <Button onClick={openAccountModal} className="border border-primary-600">
+                    {account.ensName ?? account.displayName}
+                  </Button>
                 </div>
               )
             })()}
