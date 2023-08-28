@@ -24,14 +24,14 @@ export const AccountButton = () => {
             {(() => {
               if (!connected) {
                 return (
-                  <Button onClick={openConnectModal} className="border border-primary-600">
+                  <Button variant="outline" onClick={openConnectModal}>
                     Connect Wallet
                   </Button>
                 )
               }
               if (chain.unsupported) {
                 return (
-                  <Button onClick={openChainModal} className="border border-primary-600">
+                  <Button variant="outline" onClick={openChainModal}>
                     Wrong network
                   </Button>
                 )
@@ -54,7 +54,7 @@ export const AccountButton = () => {
                       </div>
                     )}
                   </Button> */}
-                  <Button onClick={openAccountModal} className="border border-primary-600">
+                  <Button variant="outline" onClick={openAccountModal}>
                     {account.ensName ?? account.displayName}
                   </Button>
                 </div>
