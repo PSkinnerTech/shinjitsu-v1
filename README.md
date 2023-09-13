@@ -10,7 +10,7 @@ This Intuition Next.js App Template is your golden ticket to a smooth start with
 
 - **Alpha Access**: First things first, this isn't for everyone. You've got to be part of the Intuition Alpha Cohort to use this application. Your API Key is like a VIP pass to a hackathon party where everyone is awkwardly standing in the corner with their laptop!
 
-- **Authentication Ready**: We've integrated Next-Auth and set it up for Intuition's closed alpha. This means your app will have authentication using DID Session authorization and an API key. And guess what? If your wallet connects and is part of our elite cohort, the API key fetches itself. ~magic~
+- **Authentication Ready**: We've integrated Next-Auth and set it up for Intuition's closed alpha. This means your app will have authentication using DID Session authorization and an API key. And guess what? If your wallet connects and is part of our elite cohort, the API key fetches itself. **magic ✨**
 
 - **Focus on What Matters**: With authentication out of the way, you can channel all your energy and creativity into building the unique features of your app. We handled the nitty-gritty, so you don't have to.
 
