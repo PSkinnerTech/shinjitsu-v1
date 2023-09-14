@@ -1,6 +1,6 @@
 import { DIDSession } from 'did-session'
 
-import { AccountFormValues } from '@/app/authenticate-card'
+import { AccountFormValues } from '@/components/AuthenticateCard'
 import { RefinementCallback } from '@/hooks/useRefinement'
 
 export function checkDIDSessionParseable(): RefinementCallback<AccountFormValues> {
