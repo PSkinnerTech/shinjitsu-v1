@@ -5,7 +5,7 @@ export async function POST(req: Request) {
   let didSession = body.didSession as string
   let apikey = body.apikey as string
 
-  const res = await fetch(`http://localhost:8080/apikey/${apikey}`, {
+  const res = await fetch(`${process.env.NEXT_API_URL}/apikey/${apikey}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
