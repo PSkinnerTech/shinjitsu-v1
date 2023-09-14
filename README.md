@@ -20,6 +20,18 @@ This Intuition Next.js App Template is your golden ticket to a smooth start with
 
 Node.js: Before anything else, ensure you have Node.js installed. Given that Next.js 13 requires a minimum Node.js version of 16.14.0, make sure you're up-to-date. If you're still on 12.x or 14.x, it's time for an upgrade my g.
 
+ArbitrumGoerli: Intuition is currently deployed on Arbitrum Goerli. To interact with the Intuition API, you'll need to connect to the Arbitrum Goerli testnet. Unsure how to do that? Check out this [tutorial](https://developer.offchainlabs.com/docs/developer_quickstart).
+
+Network Configuration:
+
+| Parameter                     | Value                                   |
+| ----------------------------- | --------------------------------------- |
+| Network Name                  | `Arbitrum Goerli`                       |
+| RPC URL                       | `https://goerli-rollup.arbitrum.io/rpc` |
+| Chain ID                      | `421613`                                |
+| Currency Symbol               | `AGOR`                                  |
+| Block Explorer URL (Optional) | `https://goerli.arbiscan.io`            |
+
 2. Fork the Repository:
 
 Instead of just cloning, we'd love for you to fork the repository. This way, we can keep track of the amazing things you're building and be part of your journey. Head over to the repository and click on the "Fork" button. Once forked, you can clone your forked repo to your local machine:
