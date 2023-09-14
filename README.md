@@ -49,6 +49,8 @@ pnpm install
 
 - **NEXTAUTH_SECRET**: Required for [next-auth](https://next-auth.js.org/getting-started/introduction). Think of it as your app's secret handshake. Whip one up with `openssl rand -base64 32`. For the curious, here's the [Next-Auth documentation](https://next-auth.js.org/getting-started/example).
 
+- **NEXT_API_URL**: Intuition alpha API url. This is already defaulted to the proper value.
+
 At this point, your `.env.local` file should look something like this:
 
 ```bash
@@ -59,6 +61,7 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=REPLACE_ME
 NEXTAUTH_URL=http://localhost:3000
 # openssl rand -base64 32
 NEXTAUTH_SECRET=WwrFzRazSs4LjV9XEXymW/XsukYTSWpSCKdiB7MNWr0=
+NEXT_API_URL=http://localhost:8080
 ```
 
 Now you are fully moisturized, in your lane, and ready to dev on Intuition! LFG.
@@ -77,10 +80,39 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Examples
+
+### Example A: Server-side fetch of identities
+
+Navigate to the protected home page after user authentication (`/src/app/page.tsx`). You'll find a commented-out example showcasing how to fetch identities server-side.
+
+To learn more about identities and how to use them, check out the [Intuition Documentation](TODO: REPLACE ME).
+
+### Example B: Client-side creation of a new identity
+
+Again, Navigate to the protected home page after user authentication (`/src/app/page.tsx`), there's a commented-out form. This is an example implementation of creating a new identity with a client-side POST request. If you want to check out the POST request to the Intuition API, check out the example implementation in the Next.js API route (`/api/identity/route.ts`).
+
+## Shadcn
+
+Shadcn provides beautifully designed components that you can copy and paste into your apps and enables you to bootstrap them via cli ([shadcn documentation](https://ui.shadcn.com/)). It 5x's your productivity and allows you to focus on what matters most, your business logic + features. Even better, we have set up the config for you so you can use it out of the box 🤝. Get after it, stay hard you 10x engineer, you.
+
+Example Usage:
+
+```bash
+npx shadcn-ui@latest add form
+```
+
 ## Learn More
 
 To learn more about Intuition, take a look at the following resources:
 
-- [Intuition Documentation]() - Discover the fundamental mechanics of Intuition through our documentation.
-- [Getting Started]() - Reference this quick guide to use our API to create claims, make attestations, and query knowledge.
-- [Contact Us]() - Need help? Having trouble authenticating? Get support from the Intuition team.
+- [Intuition Documentation](TODO: REPLACE ME) - Discover the fundamental mechanics of Intuition through our documentation.
+- [Getting Started](TODO: REPLACE ME) - Reference this quick guide to use our API to create claims, make attestations, and query knowledge.
+- [Contact Us](TODO: REPLACE ME) - Need help? Having trouble authenticating? Get support from the Intuition team.
+
+## References
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next-Auth Documentation](https://next-auth.js.org/) - learn about Next-Auth features and API.
+- [WalletConnect Documentation](https://docs.walletconnect.com/) - learn about WalletConnect features and API.
+- [Alchemy Documentation](https://docs.alchemy.com/) - learn about Alchemy features and API.
