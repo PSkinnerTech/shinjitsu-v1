@@ -73,8 +73,10 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=REPLACE_ME
 NEXTAUTH_URL=http://localhost:3000
 # openssl rand -base64 32
 NEXTAUTH_SECRET=WwrFzRazSs4LjV9XEXymW/XsukYTSWpSCKdiB7MNWr0=
-NEXT_PUBLIC_API_URL=http://localhost:8080
+NEXT_PUBLIC_API_URL=http://api.intuition.cafe
 ```
+
+**Note**: Running this locally will result in a mismatch between the url the SIWE is expecting and the url that is being served. This is ok. The SIWE will still work as expected.
 
 Now you are fully moisturized, in your lane, and ready to dev on Intuition! LFG.
 
@@ -118,9 +120,9 @@ npx shadcn-ui@latest add form
 
 To learn more about Intuition, take a look at the following resources:
 
-- [Intuition Documentation](TODO: REPLACE ME) - Discover the fundamental mechanics of Intuition through our documentation.
-- [Getting Started](TODO: REPLACE ME) - Reference this quick guide to use our API to create claims, make attestations, and query knowledge.
-- [Contact Us](TODO: REPLACE ME) - Need help? Having trouble authenticating? Get support from the Intuition team.
+- [Intuition Documentation](https://app.gitbook.com/o/xYyeoT5KBfRZxYH5NYQb/s/cVc9V0gt0E79kdhQIpdk/) - Discover the fundamental mechanics of Intuition through our documentation.
+- [Getting Started](https://app.gitbook.com/o/xYyeoT5KBfRZxYH5NYQb/s/cVc9V0gt0E79kdhQIpdk/developer-docs/getting-started) - Reference this quick guide to use our API to create claims, make attestations, and query knowledge.
+- [Contact Us](https://app.gitbook.com/o/xYyeoT5KBfRZxYH5NYQb/s/cVc9V0gt0E79kdhQIpdk/learn-more/contact-us) - Need help? Having trouble authenticating? Get support from the Intuition team.
 
 ## References
 
