@@ -14,28 +14,28 @@ import { requireAuth } from '@/lib/session'
 /**
  * Example A: Serverside fetch of identities
  */
-// export async function getIdentities() {
-//   const { didSession, apikey } = await requireAuth()
-//   const headers = getAuthHeaders(didSession, apikey)
+export async function getIdentities() {
+  const { didSession, apikey } = await requireAuth()
+  const headers = getAuthHeaders(didSession, apikey)
 
-//   const res = await fetch(
-//     `${process.env.NEXT_PUBLIC_API_URL}/query/identities`,
-//     {
-//       method: 'POST',
-//       headers,
-//       body: JSON.stringify({}),
-//     },
-//   )
-//   const { data: identities } = await res.json()
-//   return { identities }
-// }
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/query/identities`,
+    {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({}),
+    },
+  )
+  const { data: identities } = await res.json()
+  return { identities }
+}
 
 export default async function Home() {
   /**
    * Example A
    */
-  // const identities = await getIdentities()
-  // console.log(identities)
+  const identities = await getIdentities()
+  console.log(identities)
 
   return (
     <>
