@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import { AccountButton } from './AccountButton'
-import IntuitionLogotype from './svg/intuition-logotype'
 import AuthenticateCard from './AuthenticateCard'
 import { useAccount } from 'wagmi'
 
@@ -10,9 +9,6 @@ export default function AuthHeader() {
   return (
     <div className="max-w-7xl w-full items-start justify-between lg:flex">
       <div className="space-y-6 max-lg:flex max-lg:flex-col max-lg:items-center">
-        <Link href="/">
-          <IntuitionLogotype />
-        </Link>
         <p className="rounded-md px-3 py-2 font-mono text-sm cursor-default border border-stone-800/50 bg-gray-50/5 backdrop-blur-sm">
           Get started by authenticating your{' '}
           <span className="font-bold text-success-500">DID Session</span> and{' '}
