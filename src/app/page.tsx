@@ -19,12 +19,15 @@ export async function getIdentities() {
 }
 
 export default async function Home() {
-  const identities = await getIdentities()
-  console.log(identities)
+  // const identities = await getIdentities()
+  // console.log(identities)
 
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center p-24 gap-y-12">
+      <main
+        className="flex min-h-screen flex-col items-center p-24 gap-y-12"
+        style={{ backgroundColor: '#111315' }}
+      >
         <Header />
         <div className="h-full flex flex-col items-center pt-40">
           <p className="rounded-md px-4 py-3 font-mono text-md cursor-default border border-stone-800/50 bg-gray-50/5 backdrop-blur-sm">
